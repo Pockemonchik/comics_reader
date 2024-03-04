@@ -1,4 +1,4 @@
-Приложение, которое читать комиксы
+Приложение для чтения комиксов
 
 Запуск и установка:
 
@@ -6,7 +6,8 @@
 cd <папка_проекта>
 
 ```
-или 
+
+или
 
 ```sh
 docker compose up --build
@@ -14,4 +15,3 @@ docker compose up --build
 
 localhost:8000/swagger/
 localhost:8000/admin/
-
