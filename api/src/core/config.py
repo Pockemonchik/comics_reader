@@ -1,0 +1,12 @@
+import os
+from pathlib import Path
+from pydantic_settings import BaseSettings
+
+BASE_DIR = Path(__file__).parent.parent
+
+class Settings(BaseSettings):
+    mode: str = os.environ.get("MODE", "DEV")
+    db_url:str = os.environ.get("DB_URL", "locahost")
+    db_echo:bool = bool(os.environ.get("DB_ECHO", False))
+
+settings = Settings()
